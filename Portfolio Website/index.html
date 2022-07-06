@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<!--Head-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Evan Mottley</title>
+    <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
+</head>
+
+<!--Body-->
+<body>
+
+    <!--Navbar-->
+    <div class="Navbar">
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#GitHub">GitHub</a>
+        <a href="#Contact">Contact</a>
+    </div>
+
+    <!--Breaks to add space between navbar and the first heading-->
+    <br>
+    <br>
+
+    <!--Background Video-->
+    <div id="Home">
+        <video autoplay muted loop id="Home_Video">
+            <source src="./img/video/background.mp4" type="video/mp4">
+            <!--Display message if video fails to run-->
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <!--Video text-->
+    <div class="Video_Text">
+        <h1 class="white-text">Evan Mottley's Portfolio</h1>
+        <strong>
+            <p class="center">
+                <q>Programming, when stripped of all its circumstantial irrelevancies,
+                    <br>boils down to no more and no less than very effective thinking
+                    so as to avoid unmastered complexity,
+                    <br>to very vigorous separation of your many different concerns.
+                </q>
+                <br> -Edsger W. Dijkstra
+                <br>
+                <br> My name is Evan Mottley. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                <br>
+                <br> <span>Thank you for stopping by and enjoy!</span>
+            </p>
+        </strong>
+    </div>
+
+    <!--About Section-->
+    <div class="Row" id="About">
+        <!--Left Column-->
+        <div class="Column_2">
+            <img src="./img/desk.jpg" alt="Desk Photo">
+        </div>
+        <!--Right Column-->
+        <div class="Column_1">
+            <h1>About</h1>
+            <p>
+                I am a software developer who loves to code.
+                <br>
+                <br>I am a graduate of <a href="https://learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more.
+                <br>
+                <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+            </p>
+        </div>
+    </div>
+
+    <!--GitHub Section-->
+    <div class="Row" id="GitHub">
+        <!--Left Column-->
+        <div class="Column_1">
+            <h1>GitHub</h1>
+            <p>
+                You can view my coding projects on my GitHub profile here:
+                <br>
+                <p class="center"><a href="https://github.com/emottley" target="_blank">Evan Mottley GitHub</a></p>
+            </p>
+        </div>
+        <!--Right Column-->
+        <div class="Column_2">
+            <a href="https://github.com/emottley" target="_blank"><img src="./img/GitHub-logo.jpg" alt="GitHub Logo"></a>
+        </div>
+    </div>
+
+    <!--Contact Section-->
+    <div class="Row" id="Contact">
+        <!--Contact image, left column-->
+        <div class="Column_2 Column_tall">
+            <img src="./img/contact.jpg" alt="Contact_Image">
+        </div>
+        <!--Contact form, right column-->
+        <div class="Column_1 Column_tall">
+            <h1>Contact</h1>
+            <!--This specifies where and how to send the form data-->
+            <form action="https://formspree.io/f/mbjwvgjq" method="post">
+                <label>Name:</label>
+                    <input type="text" placeholder="Please enter your name here">
+                <label>Email:</label>
+                    <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                <label>Message:</label>
+                    <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                    <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <!--Footer Section-->
+    <footer>
+        <p class="center">
+            <a href="mailto:emottley@outlook.com">emottley@outlook.com</a>
+            <br>
+        </p>
+    </footer>
+</body>
+</html>
